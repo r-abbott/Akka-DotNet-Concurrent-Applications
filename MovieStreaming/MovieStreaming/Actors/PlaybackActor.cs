@@ -8,15 +8,8 @@ namespace MovieStreaming.Actors
     {
         public PlaybackActor()
         {
-            Console.WriteLine("Creating a PlaybackActor");
-
-            Receive<PlayMovieMessage>(m => HandlePlayMovieMessage(m));
-        }
-
-        private void HandlePlayMovieMessage(PlayMovieMessage message)
-        {
-            ColorConsole.WriteLineYellow(
-                $"PlayMovieMessage {message.MovieTitle} for user {message.UserId}");
+            Context.ActorOf(Props.Create<UserCoordinatorActor>(), "UserCoordinator");
+            Context.ActorOf(Props.Create<PlaybackStatisticsActor>(), "PlaybackStatistics");
         }
 
         protected override void PreStart()
@@ -32,8 +25,13 @@ namespace MovieStreaming.Actors
         protected override void PreRestart(Exception reason, object message)
         {
             ColorConsole.WriteLineGreen($"PlaybackActor PreRestart because: {reason}");
-
             base.PreRestart(reason, message);
+        }
+
+        protected override void PostRestart(Exception reason)
+        {
+            ColorConsole.WriteLineGreen($"PlaybackActor PostRestart because: {reason}");
+            base.PostRestart(reason);
         }
     }
 }

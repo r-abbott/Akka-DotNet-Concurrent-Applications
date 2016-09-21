@@ -24,12 +24,22 @@ namespace MovieStreaming
             WriteLineColor(message, ConsoleColor.Cyan);
         }
 
+        public static void WriteLineGray(string message)
+        {
+            WriteLineColor(message, ConsoleColor.Gray);
+        }
+
         private static void WriteLineColor(string message, ConsoleColor color)
         {
             var beforeColor = Console.ForegroundColor;
             Console.ForegroundColor = color;
             Console.WriteLine(message);
             Console.ForegroundColor = beforeColor;
+        }
+
+        public static void WriteMagenta(string message)
+        {
+            WriteLineColor(message, ConsoleColor.Magenta);
         }
     }
 }
