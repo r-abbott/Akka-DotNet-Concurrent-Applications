@@ -6,8 +6,8 @@ https://app.pluralsight.com/library/courses/akka-dotnet-actor-model-building-con
 
 Covers:
 
-Creating and using Actors
-Actor Supervision Hierarchies
-Sending message to Actors
-Using Actor Paths
-Actor Lifecycles and States using Become
+- Creating and using Actors
+- Actor Supervision Hierarchies
+- Sending message to Actors
+- Using Actor Paths
+- Actor Lifecycles and States using Become
