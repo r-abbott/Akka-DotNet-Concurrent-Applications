@@ -12,3 +12,4 @@ Covers:
 - Actor Lifecycles and States using Become
 - Actor Supervision Hierarchies
 - Supervision Strategies
+- Deploying and Messaging Remote Actors
