@@ -58,6 +58,8 @@
     <Compile Include="Actors\MoviePlayCounterActor.cs" />
     <Compile Include="Actors\PlaybackActor.cs" />
     <Compile Include="Actors\PlaybackStatisticsActor.cs" />
+    <Compile Include="Exceptions\SimulatedCorruptStateException.cs" />
+    <Compile Include="Exceptions\SimulatedTerribleMovieException.cs" />
     <Compile Include="Actors\UserActor.cs" />
     <Compile Include="Actors\UserCoordinatorActor.cs" />
     <Compile Include="ColorConsole.cs" />
