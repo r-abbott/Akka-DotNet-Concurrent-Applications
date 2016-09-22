@@ -1,9 +1,9 @@
 ﻿using Akka.Actor;
 using System.Collections.Generic;
 using System;
-using MovieStreaming.Messages;
+using MovieStreaming.Common.Messages;
 
-namespace MovieStreaming.Actors
+namespace MovieStreaming.Common.Actors
 {
     public class MoviePlayCounterActor : ReceiveActor
     {

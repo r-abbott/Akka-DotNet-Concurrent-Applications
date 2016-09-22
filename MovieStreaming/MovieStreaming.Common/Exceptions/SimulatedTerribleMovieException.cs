@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace MovieStreaming.Actors
+namespace MovieStreaming.Common.Actors
 {
     [Serializable]
     internal class SimulatedTerribleMovieException : Exception

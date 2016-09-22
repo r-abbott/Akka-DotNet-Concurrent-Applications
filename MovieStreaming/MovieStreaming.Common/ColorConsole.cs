@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MovieStreaming
+namespace MovieStreaming.Common
 {
     public static class ColorConsole
     {
